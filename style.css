@@ -233,3 +233,25 @@ body {
 .hero {
   margin-top: 0 !important;
 }
+/* ===== FINAL SINGLE WHITE STRIP FIX ===== */
+
+/* remove any accidental borders/gaps */
+.header {
+  border: none !important;
+  padding-bottom: 0 !important;
+}
+
+/* THIS is the ONLY white strip */
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;          /* full length */
+  height: 16px;         /* MOTI but clean */
+  background: #ffffff;
+}
+
+/* ensure hero starts clean */
+.hero {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+}
