@@ -19,13 +19,12 @@ body {
 .header {
   background: #0f766e;
   text-align: center;
-  padding: 12px 10px 6px;   /* IMPORTANT: very small padding */
+  padding: 10px 10px 8px;
 }
 
 .header h1 {
   color: #ffffff;
   font-size: 22px;
-  margin: 0;               /* GAP KILLER */
   line-height: 1.2;
 }
 
@@ -33,7 +32,7 @@ body {
    NAV MENU
 ===================== */
 .main-nav {
-  margin-top: 4px;         /* ONLY THIS MUCH GAP */
+  margin-top: 6px;
 }
 
 .main-nav a {
@@ -52,206 +51,10 @@ body {
 ===================== */
 .hero {
   background: linear-gradient(180deg, #0f766e, #3b9c93);
-  padding: 24px 16px 40px;   /* tight top spacing */
+  padding: 28px 16px 44px;
 }
 
 .hero-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.hero-left {
-  max-width: 520px;
-  text-align: center;
-}
-
-.hero-left h2 {
-  color: #ffffff;
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-.hero-left p {
-  color: #e6fffa;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 20px;
-  font-size: 14px;
-  text-decoration: none;
-  margin: 4px;
-}
-
-.btn-primary {
-  background: #ffffff;
-  color: #0f766e;
-  font-weight: bold;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-/* =====================
-   SERVICES
-===================== */
-.services {
-  padding: 50px 16px;
-  text-align: center;
-}
-
-.services h3 {
-  margin-bottom: 20px;
-}
-
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.card {
-  background: #ffffff;
-  padding: 14px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-/* =====================
-   HOME COLLECTION
-===================== */
-.home-collection {
-  background: #f0fdfa;
-  padding: 50px 16px;
-  text-align: center;
-}
-
-.collection-points {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.point {
-  background: #ffffff;
-  padding: 10px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-}
-
-/* =====================
-   WHY US
-===================== */
-.why-us {
-  padding: 50px 16px;
-  text-align: center;
-}
-
-.why-points {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.why-card {
-  background: #ffffff;
-  padding: 18px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-/* =====================
-   CONTACT
-===================== */
-.contact-section {
-  background: #f9fafb;
-  padding: 50px 16px;
-  text-align: center;
-}
-
-.contact-box p {
-  margin: 6px 0;
-}
-
-/* =====================
-   FOOTER
-===================== */
-.footer {
-  background: #0f766e;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px;
-  font-size: 13px;
-}
-/* FINAL FIX: TOP GAP KILL */
-.whatsapp-float {
-  position: fixed;
-}
-
-.header {
-  padding-top: 6px !important;
-}
-
-.main-nav {
-  margin-top: 0 !important;
-}
-/* SMALL WHITE GAP BETWEEN MENU & HERO */
-.header {
-  padding-bottom: 14px !important; /* header ke niche thoda gap */
-  border-bottom: 6px solid #ffffff; /* white strip */
-}
-
-.hero {
-  padding-top: 20px !important; /* hero thoda niche se start ho */
-}
-/* FORCE WHITE STRIP BETWEEN HEADER & HERO */
-.header::after {
-  content: "";
-  display: block;
-  height: 18px;              /* white gap thickness */
-  background: #ffffff;
-}
-
-/* ensure hero starts clean */
-.hero {
-  margin-top: 0 !important;
-}
-/* ===== FINAL SINGLE WHITE STRIP FIX ===== */
-
-/* remove any accidental borders/gaps */
-.header {
-  border: none !important;
-  padding-bottom: 0 !important;
-}
-
-/* THIS is the ONLY white strip */
-.header::after {
-  content: "";
-  display: block;
-  width: 100%;          /* full length */
-  height: 16px;         /* MOTI but clean */
-  background: #ffffff;
-}
-
-/* ensure hero starts clean */
-.hero {
-  margin-top: 0 !important;
-  padding-top: 20px !important;
-}
