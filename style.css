@@ -291,6 +291,26 @@ hr {
 body {
   margin-top: 0 !important;
 }
+/* HEADER DESIGN FIX */
+.header {
+    background: #0f766e;
+    text-align: center;
+    padding: 16px 10px 8px;
+}
 
+.header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* MENU BELOW TITLE */
+.main-nav {
+    margin-top: 6px;
+}
+
+.main-nav a {
+    color: #e6ff
+  
 }
 
