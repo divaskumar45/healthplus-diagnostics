@@ -366,6 +366,35 @@ html {
     margin-top: 0 !important;
     padding-top: 16px !important;
 }
+/* FORCE REMOVE GAP BETWEEN HEADER AND NEXT SECTION */
+header {
+    margin-bottom: 0 !important;
+    padding-bottom: 4px !important;
+}
+
+header + section,
+header + div {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* HERO / FIRST SECTION HARD RESET */
+section:first-of-type,
+.hero,
+.hero-section,
+.banner,
+.main,
+.container:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+}
+
+/* REMOVE ANY TOP SPACER */
+.spacer,
+.top-space,
+.gap {
+    display: none !important;
+}
 
 }
 
