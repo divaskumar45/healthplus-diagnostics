@@ -225,7 +225,7 @@ body {
 .header::after {
   content: "";
   display: block;
-  height: 8px;              /* white gap thickness */
+  height: 18px;              /* white gap thickness */
   background: #ffffff;
 }
 
