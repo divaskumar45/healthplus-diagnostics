@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -10,7 +10,7 @@ body{
   color:#1f2937;
 }
 
-/* TOP BAR */
+/* ================= TOP BAR ================= */
 .top-bar{
   background:#0b5ed7;
   color:#ffffff;
@@ -20,7 +20,7 @@ body{
   justify-content:space-between;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header{
   background:#ffffff;
   border-bottom:1px solid #e5e7eb;
@@ -35,15 +35,21 @@ body{
   align-items:center;
 }
 
+.logo{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
 .logo strong{
-  font-size:20px;
+  font-size:19px;
   color:#0b5ed7;
 }
 
 .logo small{
-  display:block;
-  font-size:12px;
+  font-size:11px;
   color:#6b7280;
+  letter-spacing:0.3px;
 }
 
 .nav a{
@@ -53,26 +59,29 @@ body{
   font-size:14px;
 }
 
+/* ================= BUTTONS ================= */
 .btn-primary{
   background:#0b5ed7;
   color:#ffffff !important;
-  padding:8px 16px;
-  border-radius:4px;
+  padding:10px 18px;
+  border-radius:6px;
   border:none;
+  font-weight:600;
 }
 
 .btn-outline{
   border:1px solid #0b5ed7;
   color:#0b5ed7;
-  padding:8px 16px;
-  border-radius:4px;
+  padding:10px 18px;
+  border-radius:6px;
   text-decoration:none;
+  opacity:0.85;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
-  background:#f5f7fa;
-  padding:50px 16px;
+  background:linear-gradient(180deg,#0f766e,#1f9d91);
+  padding:42px 16px;
 }
 
 .hero-wrap{
@@ -85,25 +94,51 @@ body{
 }
 
 .hero-text h1{
-  font-size:32px;
-  margin-bottom:12px;
+  font-size:28px;
+  line-height:1.25;
+  margin-bottom:10px;
+  color:#ffffff;
 }
 
 .hero-text p{
-  color:#4b5563;
-  margin-bottom:20px;
+  font-size:15px;
+  line-height:1.6;
+  color:#e6fffa;
+  margin-bottom:14px;
+}
+
+.hero-text ul{
+  margin-bottom:18px;
+  padding-left:0;
+}
+
+.hero-text li{
+  list-style:none;
+  font-size:14px;
+  color:#e6fffa;
+  margin-bottom:6px;
+}
+
+.hero-buttons a{
+  display:inline-block;
+  margin-right:10px;
+  margin-top:8px;
 }
 
 .hero-image img{
   width:100%;
-  border-radius:6px;
+  border-radius:8px;
 }
 
-/* BOOK STRIP */
+/* ================= BOOK STRIP ================= */
 .book-strip{
   background:#e9f1ff;
-  padding:30px 16px;
+  padding:26px 16px;
   text-align:center;
+}
+
+.book-strip h2{
+  font-size:20px;
 }
 
 .book-form{
@@ -118,9 +153,11 @@ body{
 .book-form select{
   padding:10px;
   min-width:180px;
+  border:1px solid #d1d5db;
+  border-radius:4px;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section{
   padding:50px 16px;
 }
@@ -131,10 +168,11 @@ body{
 
 .section-title{
   text-align:center;
-  margin-bottom:30px;
+  margin-bottom:28px;
+  font-size:22px;
 }
 
-/* PANELS */
+/* ================= PANELS ================= */
 .panel-grid{
   max-width:1000px;
   margin:auto;
@@ -148,9 +186,10 @@ body{
   padding:16px;
   border:1px solid #e5e7eb;
   text-align:center;
+  font-size:14px;
 }
 
-/* PACKAGES */
+/* ================= PACKAGES ================= */
 .package-grid{
   max-width:1000px;
   margin:auto;
@@ -165,12 +204,18 @@ body{
   background:#ffffff;
 }
 
+.package h3{
+  font-size:17px;
+}
+
 .package ul{
   margin:10px 0;
+  padding-left:18px;
 }
 
 .package li{
   font-size:14px;
+  margin-bottom:4px;
 }
 
 .price{
@@ -178,25 +223,27 @@ body{
   margin:10px 0;
   font-size:20px;
   color:#0b5ed7;
+  font-weight:600;
 }
 
-/* WHY US */
+/* ================= WHY US ================= */
 .why-grid{
   max-width:900px;
   margin:auto;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:16px;
+  gap:14px;
 }
 
 .why-card{
   background:#ffffff;
-  padding:18px;
+  padding:14px;
   text-align:center;
   border:1px solid #e5e7eb;
+  font-size:14px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 .footer{
   background:#0b5ed7;
   color:#ffffff;
@@ -205,9 +252,13 @@ body{
   font-size:14px;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media(max-width:900px){
   .hero-wrap{
     grid-template-columns:1fr;
+  }
+
+  .nav{
+    display:none;
   }
 }
