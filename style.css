@@ -311,6 +311,22 @@ body {
 
 .main-nav a {
     color: #e6ff
-  
+  /* REMOVE TOP WHITE SPACE */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+header {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+}
+
+/* REMOVE EXTRA SPACE ABOVE HEADER */
+html {
+    margin: 0;
+    padding: 0;
+}
+
 }
 
