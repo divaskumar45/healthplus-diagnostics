@@ -273,6 +273,24 @@ p {
 .announcement-bar {
   display: none !important;
 }
+/* FORCE REMOVE TOP GREEN LINE */
+header::before,
+header::after,
+.top-bar,
+.header-top,
+.announcement-bar,
+.notice-bar,
+hr {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* EXTRA SAFETY */
+body {
+  margin-top: 0 !important;
+}
 
 }
 
