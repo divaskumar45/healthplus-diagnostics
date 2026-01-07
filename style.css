@@ -200,3 +200,15 @@ body {
   padding: 14px;
   font-size: 13px;
 }
+/* FINAL FIX: TOP GAP KILL */
+.whatsapp-float {
+  position: fixed;
+}
+
+.header {
+  padding-top: 6px !important;
+}
+
+.main-nav {
+  margin-top: 0 !important;
+}
