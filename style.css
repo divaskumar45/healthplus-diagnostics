@@ -268,6 +268,11 @@ p {
   padding: 15px;
   font-size: 14px;
 }
+.top-bar,
+.header-top,
+.announcement-bar {
+  display: none !important;
+}
 
 }
 
