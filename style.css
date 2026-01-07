@@ -345,6 +345,27 @@ html {
     margin-top: 0 !important;
     padding-top: 20px !important;
 }
+/* HEADER + MENU GAP FIX */
+.header {
+    padding-top: 10px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 0 !important;
+}
+
+.main-nav {
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* HERO SECTION TOP GAP FIX */
+.hero,
+.hero-section,
+.banner,
+.section-hero {
+    margin-top: 0 !important;
+    padding-top: 16px !important;
+}
 
 }
 
