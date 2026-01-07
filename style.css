@@ -236,5 +236,27 @@ p {
   background: #1ebe5d;
 }
 
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  background: #f9fafb;
+  padding: 60px 20px;
+}
+
+.contact-section h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 }
 
