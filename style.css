@@ -27,3 +27,17 @@ p {
   padding: 40px 20px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0f766e;
+  font-weight: 600;
+}
