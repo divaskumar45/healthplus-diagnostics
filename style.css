@@ -120,6 +120,36 @@ p {
 .btn-primary:hover {
   background: #e6fffa !important;
 }
+/* ===== SERVICES SECTION ===== */
+.services {
+  padding: 60px 20px;
+}
+
+.services h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  padding: 22px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
 
 }
 
