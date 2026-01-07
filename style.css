@@ -221,3 +221,15 @@ body {
 .hero {
   padding-top: 20px !important; /* hero thoda niche se start ho */
 }
+/* FORCE WHITE STRIP BETWEEN HEADER & HERO */
+.header::after {
+  content: "";
+  display: block;
+  height: 8px;              /* white gap thickness */
+  background: #ffffff;
+}
+
+/* ensure hero starts clean */
+.hero {
+  margin-top: 0 !important;
+}
