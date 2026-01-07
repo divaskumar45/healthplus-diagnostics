@@ -327,6 +327,24 @@ html {
     margin: 0;
     padding: 0;
 }
+/* REDUCE GAP BELOW HEADER + MENU */
+.header {
+    padding-bottom: 6px !important;
+    margin-bottom: 0 !important;
+}
+
+.main-nav {
+    margin-bottom: 4px !important;
+    padding-bottom: 0 !important;
+}
+
+/* HERO SECTION GAP FIX */
+.hero,
+.hero-section,
+.banner {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+}
 
 }
 
