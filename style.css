@@ -106,7 +106,7 @@ p {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   font-weight: 600;
 }
-/* ===== FORCE HERO BUTTON STYLE ===== */
+/* ===== HERO PRIMARY BUTTON ===== */
 .btn-primary {
   display: inline-block;
   background: #ffffff !important;
@@ -119,5 +119,7 @@ p {
 
 .btn-primary:hover {
   background: #e6fffa !important;
+}
+
 }
 
