@@ -16,3 +16,14 @@ p {
   font-size: 18px;
   padding: 20px;
 }
+.top-bar {
+  background: #0f766e;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.header {
+  padding: 40px 20px;
+}
+
