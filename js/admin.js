@@ -1,25 +1,31 @@
-<script>
+const table = document.getElementById("bookingTable");
+
 let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
-let table = document.getElementById("bookingTable");
 
 function renderTable() {
   table.innerHTML = "";
 
+  if (bookings.length === 0) {
+    table.innerHTML = `<tr><td colspan="6">No bookings found</td></tr>`;
+    return;
+  }
+
   bookings.forEach((b, index) => {
-    let row = `
-      <tr>
-        <td>${b.name}</td>
-        <td>${b.phone}</td>
-        <td>${b.test}</td>
-        <td>${b.date}</td>
-        <td>${b.status}</td>
-        <td>
-          <button onclick="markDone(${index})">✔ Done</button>
-          <button onclick="deleteBooking(${index})">🗑 Delete</button>
-        </td>
-      </tr>
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${b.name || ""}</td>
+      <td>${b.phone || ""}</td>
+      <td>${b.test || ""}</td>
+      <td>${b.date || ""}</td>
+      <td>${b.status || "Pending"}</td>
+      <td>
+        <button onclick="markDone(${index})">✔ Done</button>
+        <button onclick="deleteBooking(${index})">🗑 Delete</button>
+      </td>
     `;
-    table.innerHTML += row;
+
+    table.appendChild(row);
   });
 }
 
@@ -30,13 +36,9 @@ function markDone(index) {
 }
 
 function deleteBooking(index) {
-  if(confirm("Delete this booking?")){
-    bookings.splice(index, 1);
-    localStorage.setItem("bookings", JSON.stringify(bookings));
-    renderTable();
-  }
+  bookings.splice(index, 1);
+  localStorage.setItem("bookings", JSON.stringify(bookings));
+  renderTable();
 }
 
 renderTable();
-</script>
-
