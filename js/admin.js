@@ -1,4 +1,7 @@
 const table = document.getElementById("bookingTable");
+const debug = document.createElement("div");
+debug.style.padding = "10px";
+document.body.prepend(debug);
 
 let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
 
