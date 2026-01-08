@@ -268,5 +268,31 @@ body{
   .hero-image img{
     max-width: 100%;
   }
+  /* ================= TEST CHECKBOX SECTION ================= */
+
+.test-section{
+  background:#ffffff;
+  border:1px solid #d1d5db;
+  padding:14px;
+  border-radius:6px;
+  max-width:600px;
+  margin:auto;
+  text-align:left;
+}
+
+.test-section label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+
+.test-section input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  accent-color:#0b5ed7;
+}
   
 }
