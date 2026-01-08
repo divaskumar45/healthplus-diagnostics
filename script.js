@@ -26,6 +26,20 @@ function bookTest() {
     tests: checkedTests,
     time: new Date().toLocaleString()
   };
+// ---- SAVE BOOKING TO LOCAL STORAGE ----
+let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+bookings.push({
+  name: document.getElementById("name").value,
+  phone: document.getElementById("phone").value,
+  email: document.getElementById("email").value,
+  test: selectedTests.join(", "),
+  date: new Date().toLocaleString(),
+  status: "Pending"
+});
+
+localStorage.setItem("bookings", JSON.stringify(bookings));
+// ---- STORAGE SAVE END ----
 
   // 🔥 1. Save to Firestore
   db.collection("testBookings")
