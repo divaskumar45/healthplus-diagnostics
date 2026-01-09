@@ -55,63 +55,29 @@
 
 </section>
 <!-- BOOK TEST STRIP -->
-<section class="book-strip">
+  <section class="book-strip">
   <h2>Book Your Test Now</h2>
-  <div class="book-form">
-    <input type="text" id="name" placeholder="Patient Name">
-<input type="text" id="mobile" placeholder="Mobile Number">
-<input type="email" id="email" placeholder="Email">
-    <div class="test-section">
-  <label>
-    <input type="checkbox" class="test-item" value="CBC">
-    CBC (Complete Blood Count)
-  </label>
 
-  <label>
-    <input type="checkbox" class="test-item" value="Thyroid">
-    Thyroid Profile
-  </label>
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Patient Name" required>
 
-  <label>
-    <input type="checkbox" class="test-item" value="Diabetes">
-    Diabetes
-  </label>
+    <input type="text" id="phone" placeholder="Mobile Number" required>
 
-  <label>
-    <input type="checkbox" class="test-item" value="Widal">
-    Widal Test
-  </label>
+    <input type="text" id="test" placeholder="Test Name (e.g. CBC)" required>
 
-  <label>
-    <input type="checkbox" class="test-item" value="Dengue">
-    Dengue Test
-  </label>
+    <input type="date" id="date" required>
 
-  <label>
-    <input type="checkbox" class="test-item" value="LFT">
-    Liver Function Test (LFT)
-  </label>
-
-  <label>
-    <input type="checkbox" class="test-item" value="RFT">
-    Renal Function Test (RFT)
-  </label>
-
-  <label>
-    <input type="checkbox" class="test-item" value="HbA1C">
-    HbA1C
-  </label>
-    </div>
-    <button type="button" class="btn-primary" onclick="alert('BUTTON CLICK OK')">Book Test</button>
-    
-  </div>
+    <button type="submit" class="btn-primary">Book Test</button>
+  </form>
 </section>
 
+<script src="js/booking.js"></script>
+  
 <!-- TEST PANELS -->
 <section class="section light">
   <h2 class="section-title">Test Panels</h2>
   <div class="panel-grid">
-    <div class="panel">Fever Panel</div>
+    <div class="panel">FeverPanel</div>
     <div class="panel">Thyroid Profile</div>
     <div class="panel">Diabetes Panel</div>
     <div class="panel">LFT + KFT</div>
