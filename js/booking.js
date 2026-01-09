@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     localStorage.setItem("bookings", JSON.stringify(bookings));
+alert("Saved: " + localStorage.getItem("bookings"));
 
     alert("Booking successful");
 
