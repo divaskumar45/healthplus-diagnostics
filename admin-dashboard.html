@@ -28,8 +28,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   let bookings = localStorage.getItem("bookings");
-  let tbody = document.getElementById("bookingTableBody");
-
+  let tbody = document.getElementById("bookingTableBody")
 
   if (!bookings) {
     tbody.innerHTML = "<tr><td colspan='6'>No bookings found</td></tr>";
