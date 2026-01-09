@@ -24,5 +24,35 @@
 </table>
 
 <script src="js/admin.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  let bookings = localStorage.getItem("bookings");
+  let tbody = document.getElementById("bookingTableBody");
+
+  if (!bookings) {
+    tbody.innerHTML = "<tr><td colspan='6'>No bookings found</td></tr>";
+    return;
+  }
+
+  bookings = JSON.parse(bookings);
+  let html = "";
+
+  for (let i = 0; i < bookings.length; i++) {
+    html += "<tr>";
+    html += "<td>" + bookings[i].name + "</td>";
+    html += "<td>" + bookings[i].phone + "</td>";
+    html += "<td>" + bookings[i].test + "</td>";
+    html += "<td>" + bookings[i].date + "</td>";
+    html += "<td>Pending</td>";
+    html += "<td>-</td>";
+    html += "</tr>";
+  }
+
+  tbody.innerHTML = html;
+
+});
+</script>
+  
 </body>
 </html>
