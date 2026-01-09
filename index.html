@@ -2,174 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anas Pathology | Diagnostic Laboratory</title>
+  <title>Anas Pathology</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- TOP INFO BAR -->
-<div class="top-bar">
-  <span>📞 +91-9000000000</span>
-  <span>✉️ anaspathology@gmail.com</span>
-</div>
-
 <!-- HEADER -->
-<header class="header">
-  <div class="header-wrap">
-    <div class="logo">
-      <strong>Anas Pathology</strong>
-      <small>Clinical Pathology & Blood Testing Lab</small>
-    </div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Tests</a>
-      <a href="#">Packages</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
+<header style="padding:15px; background:#0b5ed7; color:white;">
+  <h1>Anas Pathology</h1>
+  <p>Reliable Pathology & Blood Testing Lab</p>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-
-  <div class="hero-wrap">
-
-    <div class="hero-text">
-      <h1>Trusted Pathology Laboratory</h1>
-      <p>
-        Reliable pathology and blood testing services with modern equipment and timely reports.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#" class="btn-primary">Know More</a>
-        <a href="#" class="btn-outline">Book Test</a>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <img src="./hero-lab.jpg" alt="Modern Pathology Laboratory">
-    </div>
-
-  </div>
-
+<!-- HERO -->
+<section style="padding:20px;">
+  <h2>Accurate Diagnostic Services</h2>
+  <p>Modern equipment • Timely reports • Trusted care</p>
 </section>
-<!-- BOOK TEST STRIP -->
-  <section class="book-strip">
+
+<!-- BOOKING SECTION (IMPORTANT) -->
+<section class="book-strip" style="padding:20px; background:#f5f5f5;">
   <h2>Book Your Test Now</h2>
 
   <form id="bookingForm">
-    <input type="text" id="name" placeholder="Patient Name" required>
+    <input type="text" id="name" placeholder="Patient Name" required><br><br>
 
-    <input type="text" id="phone" placeholder="Mobile Number" required>
+    <input type="text" id="phone" placeholder="Mobile Number" required><br><br>
 
-    <input type="text" id="test" placeholder="Test Name (e.g. CBC)" required>
+    <input type="text" id="test" placeholder="Test Name (e.g. CBC)" required><br><br>
 
-    <input type="date" id="date" required>
+    <input type="date" id="date" required><br><br>
 
-    <button type="submit" class="btn-primary">Book Test</button>
+    <button type="submit">Book Test</button>
   </form>
 </section>
 
-<script src="js/booking.js"></script>
-  
-<!-- TEST PANELS -->
-<section class="section light">
-  <h2 class="section-title">Test Panels</h2>
-  <div class="panel-grid">
-    <div class="panel">FeverPanel</div>
-    <div class="panel">Thyroid Profile</div>
-    <div class="panel">Diabetes Panel</div>
-    <div class="panel">LFT + KFT</div>
-    <div class="panel">Pre Operation Profile</div>
-    <div class="panel">Auto Immune Profile</div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section class="section">
-  <h2 class="section-title">Popular Packages</h2>
-  <div class="package-grid">
-    <div class="package">
-      <h3>Basic Health Check</h3>
-      <ul>
-        <li>CBC</li>
-        <li>Blood Sugar</li>
-        <li>Urine Routine</li>
-      </ul>
-      <span class="price">₹999</span>
-      <button class="btn-primary">Book Now</button>
-    </div>
-
-    <div class="package">
-      <h3>Full Body Checkup</h3>
-      <ul>
-        <li>Liver Function</li>
-        <li>Kidney Function</li>
-        <li>Thyroid</li>
-      </ul>
-      <span class="price">₹1999</span>
-      <button class="btn-primary">Book Now</button>
-    </div>
-
-    <div class="package">
-      <h3>Diabetes Care</h3>
-      <ul>
-        <li>FBS</li>
-        <li>PPBS</li>
-        <li>HbA1c</li>
-      </ul>
-      <span class="price">₹699</span>
-      <button class="btn-primary">Book Now</button>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section class="section light">
-  <h2 class="section-title">Why Choose Anas Pathology</h2>
-  <div class="why-grid">
-    <div class="why-card">Experienced Staff</div>
-    <div class="why-card">Accurate Reports</div>
-    <div class="why-card">Modern Technology</div>
-    <div class="why-card">Affordable Pricing</div>
-  </div>
-</section>
-
 <!-- FOOTER -->
-<footer class="footer">
-  <p><strong>Anas Pathology</strong></p>
-  <p>Varanasi, Uttar Pradesh</p>
-  <p>📞 +91-9000000000</p>
-  <p>✉️ anaspathology@gmail.com</p>
-  <p>© 2026 Anas Pathology. All Rights Reserved.</p>
+<footer style="padding:15px; background:#222; color:white;">
+  <p>© 2026 Anas Pathology</p>
 </footer>
-<!-- Firebase SDKs (NON-MODULE, SAFE) -->
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyBvgn0Urg8sSOKJ4CFzMtJMtQJ99_rwSo",
-    authDomain: "anas-pathology-demo.firebaseapp.com",
-    projectId: "anas-pathology-demo",
-    storageBucket: "anas-pathology-demo.appspot.com",
-    messagingSenderId: "129925889916",
-    appId: "1:129925889916:web:21d089df8acd99ac266ef9"
-  };
+<!-- BOOKING SCRIPT (MOST IMPORTANT) -->
+<script src="js/booking.js"></script>
 
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
-
-
-  <!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<!-- Main JS -->
-<!-- Main JS (ONLY ONCE, AFTER EmailJS) -->
-<script src="script.js"></script>
-  
 </body>
 </html>
