@@ -1,5 +1,3 @@
-// BOOKING FORM SAVE CODE
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const form = document.getElementById("bookingForm");
@@ -13,13 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const test = document.getElementById("test").value;
     const date = document.getElementById("date").value;
 
-    let bookings = localStorage.getItem("bookings");
-
-    if (bookings) {
-      bookings = JSON.parse(bookings);
-    } else {
-      bookings = [];
-    }
+    let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
 
     bookings.push({
       name: name,
@@ -29,12 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     localStorage.setItem("bookings", JSON.stringify(bookings));
-alert("Saved: " + localStorage.getItem("bookings"));
 
     alert("Booking successful");
-
     form.reset();
   });
 
 });
-
