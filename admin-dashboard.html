@@ -20,7 +20,7 @@
       <th>Action</th>
     </tr>
   </thead>
-  <tbody id="bookingTable"></tbody>
+  <tbody id="bookingTableBody"></tbody>
 </table>
 
 <script src="js/admin.js"></script>
@@ -28,7 +28,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   let bookings = localStorage.getItem("bookings");
-  let tbody = document.getElementById("bookingTableBody");
+  let tbody = document.getElementById("bookingTable");
 
   if (!bookings) {
     tbody.innerHTML = "<tr><td colspan='6'>No bookings found</td></tr>";
