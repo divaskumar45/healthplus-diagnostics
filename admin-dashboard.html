@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Dashboard – Anas Pathology</title>
+  <title>Admin Dashboard - Anas Pathology</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,25 +17,27 @@
       <th>Test</th>
       <th>Date</th>
       <th>Status</th>
-      <th>Action</th>
     </tr>
   </thead>
-  <tbody id="bookingTableBody"></tbody>
+  <tbody id="bookingTableBody">
+    <tr>
+      <td colspan="5">Loading...</td>
+    </tr>
+  </tbody>
 </table>
 
-<script src="js/admin.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  let bookings = localStorage.getItem("bookings");
-  let tbody = document.getElementById("bookingTableBody")
+  let tbody = document.getElementById("bookingTableBody");
+  let data = localStorage.getItem("bookings");
 
-  if (!bookings) {
-    tbody.innerHTML = "<tr><td colspan='6'>No bookings found</td></tr>";
+  if (!data) {
+    tbody.innerHTML = "<tr><td colspan='5'>No bookings found</td></tr>";
     return;
   }
 
-  bookings = JSON.parse(bookings);
+  let bookings = JSON.parse(data);
   let html = "";
 
   for (let i = 0; i < bookings.length; i++) {
@@ -45,14 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
     html += "<td>" + bookings[i].test + "</td>";
     html += "<td>" + bookings[i].date + "</td>";
     html += "<td>Pending</td>";
-    html += "<td>-</td>";
     html += "</tr>";
   }
 
   tbody.innerHTML = html;
-
 });
 </script>
-  
+
 </body>
 </html>
