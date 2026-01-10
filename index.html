@@ -84,7 +84,26 @@ function saveBooking(e) {alert("Button clicked");
   document.getElementById("bookingForm").reset();
 }
   </script>
-  
+  <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script>
+  // Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBvgnU0rggsS0KJ4CFzFMtJMtQJ9_rwSo",
+    authDomain: "anas-pathology-demo.firebaseapp.com",
+    databaseURL: "https://anas-pathology-demo-default-rtdb.firebaseio.com",
+    projectId: "anas-pathology-demo",
+    storageBucket: "anas-pathology-demo.appspot.com",
+    messagingSenderId: "129925889916",
+    appId: "1:129925889916:web:21d089df8acd99ac266ef9"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+</script>
 
 </body>
 </html>
